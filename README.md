@@ -29,3 +29,29 @@ gcc *.c -o programa
 ## Herramientas
 
 C (GCC), Code::Blocks como IDE de cursada.
+
+## Compilar
+
+Cada carpeta tiene su `Makefile`:
+
+```bash
+cd arbol-binario   # o cualquier otra carpeta
+make
+./main
+```
+
+## Salida de ejemplo (arbol-binario)
+
+```text
+----- Ejemplo arbol binario ----
+
+Imprimiendo preorden
+28,11,6,1,2,10,21,25,96,30,97,
+Imprimiendo inorden
+1,2,6,10,11,21,25,28,30,96,97,
+Imprimiendo postorden
+2,1,10,6,25,21,11,30,97,96,28,
+Buscando el 11
+No esta el 11 != 28 --> IZQUIERDA
+Encontrado
+```
