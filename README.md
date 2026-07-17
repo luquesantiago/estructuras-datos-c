@@ -1,19 +1,31 @@
 # Estructuras de datos en C
 
-Implementaciones de estructuras de datos clásicas en C, de la cursada de Algoritmos y Estructuras de Datos.
+Implementaciones de estructuras de datos clásicas en C, de la cursada de Algoritmos y Estructuras de Datos. En todos los casos se separa interfaz (`.h`) de implementación (`.c`) usando TDA con tipos opacos.
 
-## Árbol binario de búsqueda (`arbol-binario/`)
+## Contenido
 
-TDA de árbol binario de búsqueda con tipo opaco (`struct NodoE` definido en el `.c`, el usuario solo maneja el puntero `Nodo`), separando interfaz (`arbol.h`) de implementación (`arbol.c`).
+### `arbol-binario/`
+Árbol binario de búsqueda: inserción y recorridos **preorden**, **inorden** y **postorden**.
 
-Operaciones: creación de nodos, inserción, y recorridos **preorden**, **inorden** y **postorden**.
+### `listas-pilas-colas/`
+Lista enlazada, **pila** y **cola** sobre un TDA nodo común, con un TDA `persona` como dato de ejemplo.
+
+### `listas-genericas/`
+Lista enlazada **genérica con `void*`**: la lista no conoce el tipo de dato que almacena.
+
+### `vectores-matrices/`
+Vectores y matrices con **memoria dinámica** (`malloc`/`realloc`).
+
+## Compilar
+
+Cada carpeta es independiente. Por ejemplo:
 
 ```bash
 cd arbol-binario
-gcc main.c arbol.c -o arbol
-./arbol
+gcc *.c -o programa
+./programa
 ```
 
-## Próximamente
+## Herramientas
 
-Listas enlazadas (int, genéricas y con `void*`), pilas y colas.
+C (GCC), Code::Blocks como IDE de cursada.
